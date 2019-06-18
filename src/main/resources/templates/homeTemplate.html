@@ -11,7 +11,7 @@
 <form th:action="@{/saveDocument}" method="post" th:object="${document}">
     <input th:field="*{name}" placeholder="name">
     <input type="date" th:field="*{date}">
-    <input th:field="*{type.}">
+    <input  type="file" th:field="*{file}">
     <input th:field="*{size}">
 
     <input type="submit" value="go!">
